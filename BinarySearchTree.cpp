@@ -82,4 +82,9 @@ class BinaryTree
                 cout << "Tree is empty" << endl;
                 return;
             }
-            
+            cout << ptr->info << "" ; //ROOT
+             preorder (ptr->leftchild); //LEFT
+            preorder(ptr->rightchild); //RIGHT
+        }
+    void postorder (Node* ptr)
+      
