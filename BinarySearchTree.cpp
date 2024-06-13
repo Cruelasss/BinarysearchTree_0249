@@ -91,4 +91,12 @@ class BinaryTree
             if (ROOT == NULL){
                 cout << "Tree is empty" << endl;
                 return;
-          
+            }
+            postorder (ptr->leftchild); //LEFT
+            postorder(ptr->rightchild); //RIGHT
+            cout << ptr->info << "" ; //ROOT
+        }
+             
+             
+};
+
