@@ -34,4 +34,10 @@ class BinaryTree
         newNode->leftchild = nullptr; // Make the left child of the new node poin to NULL
         newNode->rightchild = nullptr; // Make the right child of the new node poin to NULL
 
-       
+        Node* parent = nullptr;
+        Node* currentNode = nullptr;
+        search (element, parent, currentNode);
+
+         if (parent == nullptr) // if the parent is NULL (Tree is empty)
+        {
+        
